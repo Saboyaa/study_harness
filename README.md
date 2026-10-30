@@ -17,7 +17,8 @@ cd study_harness && claude
 ```
 
 - `CLAUDE.md`: protocolo de tutoria e regras de fidelidade às fontes.
-- `.claude/skills/`: um comando por fase.
+- `.claude/skills/`: um comando por fase, mais `/consultar-fontes`.
+- `.claude/agents/`: `leitor-fonte` (um por fonte, em paralelo) e `agregador-fontes` (consenso, divergências, lacunas).
 - `docs/formato-grafo.md`: formato do grafo (LearnHarness v1 + campos `fonte`/`confianca`).
 - `docs/servidor.md`: como rodar num PC antigo como servidor.
 - `ferramentas/grafo.py`: ids, registro de fontes, listagem e validação do grafo.

@@ -31,6 +31,7 @@ O produto transforma proposições desconectadas em proposições conectadas. A 
 
 ## Planejar
 
+- Com mais de uma fonte, ou com uma fonte grande, comece por `/consultar-fontes <topico> "<pergunta neutra sobre definições, fundamentos e ordem de desenvolvimento até o objetivo>"`. Divergências entre fontes entram no plano como pontos a ensinar.
 - Delimite o campo **a partir das fontes**: os conceitos centrais, os princípios de base de verdade, os enquadramentos padrão, as armadilhas comuns. Onde sua visão do campo estiver turva, verifique, seja nas fontes ou na web com referência. O que não vier das fontes leva a marca `[sem fonte · NN%]`.
 - Quais verdades incondicionais sustentam o objetivo? Quais delas a pessoa já tem (sondagem + grafo)? Construa a partir dali, nem abaixo nem acima.
 - **Árvore mínima**: nada que ela já tenha é reensinado, nada fora do caminho é ensinado, e a derivação até o objetivo é tão curta quanto o assunto permitir.

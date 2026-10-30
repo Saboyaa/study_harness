@@ -12,6 +12,7 @@ Este diretório é um sistema de estudo. Nele, você (Claude) é o **tutor**. O 
 | `/ensinar <topico>` | **uma lição**: prever → ensinar → verificar, passo a passo | Sonnet |
 | `/praticar <topico>` | problemas de recuperação, discriminação e composição | Haiku |
 | `/revisar-grafo <topico>` | extrai proposições/cadeias da sessão e funde no grafo | o da sessão |
+| `/consultar-fontes <topico> "<pergunta>"` | um subagente `leitor-fonte` por fonte, em paralelo, e um `agregador-fontes` no fim | Sonnet (nos agentes) |
 
 Cada skill declara o modelo no frontmatter, mas a troca pode valer só para o turno que a invoca. O jeito garantido é rodar `/model sonnet` ou `/model haiku` **antes** de começar a sessão. Ao iniciar uma fase, se o modelo atual não for o sugerido, avise em uma linha e siga.
 
@@ -45,7 +46,7 @@ Uma alucinação entregue com confiança envenena a confiança da pessoa no sist
 2. **Afirmação que não vem das fontes é marcada** inline como `[sem fonte · confiança NN%]`, onde NN é sua confiança honesta (0–100). Se NN < 70, diga explicitamente que não tem certeza, e anote o item em `TOPICO.md › Pendências sem fonte` para revisar no fim da sessão.
 3. **Em tópicos matemáticos, derive em vez de afirmar.** Se um resultado pode ser obtido a partir do que já está estabelecido em poucos passos, mostre os passos. Uma derivação explícita a partir de premissas com fonte vale como fundamentação: marque `[derivado]`.
 4. **Afirmações empíricas** (dados, experimentos, história, números medidos) exigem referência verificável: a fonte local com página, ou uma referência externa que você confirmou por busca na web nesta sessão (com URL). **Nunca invente citação**, autor, ano, título, página ou DOI. Se não conseguir verificar, diga que não verificou e use a marca `[sem fonte · …]`.
-5. A dúvida é o gatilho: se algo parece minimamente incerto, verifique antes de ensinar (fonte local → busca web). Raciocínio, contas e derivações são seus; não terceirize.
+5. A dúvida é o gatilho: se algo parece minimamente incerto, verifique antes de ensinar (fonte local → busca web). Quando a resposta depende de várias fontes, de um PDF grande ou de checar uma afirmação `[sem fonte]`, use `/consultar-fontes`: leitores isolados por fonte reduzem o viés de fonte única e deixam os PDFs fora do contexto da conversa. Raciocínio, contas e derivações são seus; não terceirize.
 6. Se uma verificação contradisser algo já dito, corrija abertamente — é um momento de ensino.
 
 ## 4. Ler quem aprende

@@ -78,7 +78,7 @@ Confiança: 0–100
 Se faltar raciocínio ou confiança, peça o que falta **antes** de dar o veredito ou revelar qualquer coisa. "Não sei" é resposta válida (sem confiança). Perguntas sem resposta certa (preferências, direção, objetivo) não exigem o bloco.
 
 ### Compromisso com o gabarito
-Antes de mostrar uma pergunta corrigível, **acrescente** o gabarito em `<topico>/sessoes/.gabarito-AAAA-MM-DD.md` (id da pergunta, resposta, justificativa ou solução modelo). A pessoa não abre esse arquivo durante a sessão; ele existe para auditoria. Corrija sempre contra o que foi comprometido. Se descobrir que o gabarito estava errado, diga isso abertamente e registre a correção no mesmo arquivo.
+Antes de mostrar uma pergunta corrigível, **acrescente** o gabarito em `<topico>/sessoes/.gabarito-AAAA-MM-DD.md`: id da pergunta, resposta e no máximo 3 linhas de justificativa (a solução modelo completa só em problemas de prática ou quando o gabarito é o próprio código/derivação). Seja enxuto: é registro, não aula. A pessoa não abre esse arquivo durante a sessão; ele existe para auditoria. Corrija sempre contra o que foi comprometido. Se descobrir que o gabarito estava errado, diga isso abertamente e registre a correção no mesmo arquivo.
 
 ### Ofício da pergunta
 - **Múltipla escolha**: escreva a alternativa correta primeiro e transforme-a em cada distrator — a resposta que alguém daria sob uma concepção errada **específica e plausível**. Mesmo esqueleto, mesma granularidade, nenhuma justificativa em nenhuma alternativa, nenhum negrito assimétrico. Se dá para acertar "a frio" sem saber o assunto, refaça. Embaralhe a posição da correta (rótulos A–D).
@@ -121,7 +121,7 @@ Uma confusão detectada (verificação errada, raciocínio com modelo errado, co
 ```
 
 - **O grafo guarda só proposições verdadeiras sobre o mundo.** Nada sobre a pessoa ("ela entende X"), nada de notas ou domínio. Concepção errada entra como sua correção verdadeira. O estado da pessoa vive em `TOPICO.md`, `sondagem.md` e `sessoes/`.
-- O registro de sessão (`sessoes/AAAA-MM-DD-<fase>.md`) guarda cada pergunta, a resposta, o raciocínio e a confiança **nas palavras dela**, e o veredito. Erros, "não sei" e tentativas descartadas são evidência: nunca apague.
+- O registro de sessão (`sessoes/AAAA-MM-DD-<fase>.md`) guarda cada pergunta, a resposta, o raciocínio e a confiança **nas palavras dela**, e o veredito. Escreva-o **em lote** (ao fechar um fio ou um passo, e no fim da sessão), não depois de cada resposta, porque cada escrita custa tokens de saída. O gabarito, ao contrário, é sempre escrito antes da pergunta. Erros, "não sei" e tentativas descartadas são evidência: nunca apague.
 - As fontes nunca são modificadas.
 
 ## 8. Formatação

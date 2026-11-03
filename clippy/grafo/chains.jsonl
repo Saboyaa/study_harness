@@ -1,0 +1,2 @@
+{"id": "arg_6d4a64fb53", "premises": ["n_3437ff79cc", "n_9397e10728"], "conclusion": "n_92f291878b", "createdAt": "2026-10-30T23:46:05+00:00", "provenance": [{"chatId": "ses_clippy_20261030_sondar", "messageId": "sessoes/2026-10-30-sondar.md#s3"}]}
+{"id": "arg_174e88d1e4", "premises": ["n_638f8fb957", "n_9397e10728"], "conclusion": "n_2c214fe7f8", "createdAt": "2026-11-02T00:05:56+00:00", "provenance": [{"chatId": "ses_clippy_20261101_ensinar-01", "messageId": "licoes/01-coercao-deref.md#m-01-3"}]}

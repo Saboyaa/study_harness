@@ -1,0 +1,122 @@
+{
+  "src_aca82bfb7422": {
+    "id": "src_aca82bfb7422",
+    "filePath": "fontes/clippy-book/attribs.md",
+    "importedAt": "2026-10-31T20:54:53+00:00"
+  },
+  "src_23618d955f7a": {
+    "id": "src_23618d955f7a",
+    "filePath": "fontes/clippy-book/configuration.md",
+    "importedAt": "2026-10-31T20:54:53+00:00"
+  },
+  "src_8afbf1a2de0d": {
+    "id": "src_8afbf1a2de0d",
+    "filePath": "fontes/clippy-book/continuous_integration/github_actions.md",
+    "importedAt": "2026-10-31T20:54:53+00:00"
+  },
+  "src_c5380e4f9fc1": {
+    "id": "src_c5380e4f9fc1",
+    "filePath": "fontes/clippy-book/continuous_integration/gitlab.md",
+    "importedAt": "2026-10-31T20:54:53+00:00"
+  },
+  "src_de162d86a037": {
+    "id": "src_de162d86a037",
+    "filePath": "fontes/clippy-book/continuous_integration/README.md",
+    "importedAt": "2026-10-31T20:54:53+00:00"
+  },
+  "src_4d4c9faed0c2": {
+    "id": "src_4d4c9faed0c2",
+    "filePath": "fontes/clippy-book/continuous_integration/travis.md",
+    "importedAt": "2026-10-31T20:54:53+00:00"
+  },
+  "src_7d7f42cd6007": {
+    "id": "src_7d7f42cd6007",
+    "filePath": "fontes/clippy-book/installation.md",
+    "importedAt": "2026-10-31T20:54:53+00:00"
+  },
+  "src_8cc2db46c927": {
+    "id": "src_8cc2db46c927",
+    "filePath": "fontes/clippy-book/lint_configuration.md",
+    "importedAt": "2026-10-31T20:54:54+00:00"
+  },
+  "src_a1b83199f504": {
+    "id": "src_a1b83199f504",
+    "filePath": "fontes/clippy-book/lints.md",
+    "importedAt": "2026-10-31T20:54:54+00:00"
+  },
+  "src_73a0f13cfa5a": {
+    "id": "src_73a0f13cfa5a",
+    "filePath": "fontes/clippy-book/ORIGEM.txt",
+    "importedAt": "2026-10-31T20:54:54+00:00"
+  },
+  "src_fe7845c987fc": {
+    "id": "src_fe7845c987fc",
+    "filePath": "fontes/clippy-book/README.md",
+    "importedAt": "2026-10-31T20:54:54+00:00"
+  },
+  "src_b09343b6372c": {
+    "id": "src_b09343b6372c",
+    "filePath": "fontes/clippy-book/SUMMARY.md",
+    "importedAt": "2026-10-31T20:54:54+00:00"
+  },
+  "src_e5d81cbc4bae": {
+    "id": "src_e5d81cbc4bae",
+    "filePath": "fontes/clippy-book/usage.md",
+    "importedAt": "2026-10-31T20:54:54+00:00"
+  },
+  "src_e5c17e069960": {
+    "id": "src_e5c17e069960",
+    "filePath": "fontes/catalogo-de-lints/cargo.md",
+    "importedAt": "2026-10-31T20:57:43+00:00"
+  },
+  "src_4a10cae076be": {
+    "id": "src_4a10cae076be",
+    "filePath": "fontes/catalogo-de-lints/complexity.md",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_54395388c8a8": {
+    "id": "src_54395388c8a8",
+    "filePath": "fontes/catalogo-de-lints/correctness.md",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_6ec294c87a54": {
+    "id": "src_6ec294c87a54",
+    "filePath": "fontes/catalogo-de-lints/deprecated.md",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_489bf5232a23": {
+    "id": "src_489bf5232a23",
+    "filePath": "fontes/catalogo-de-lints/nursery.md",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_eb68ee505d47": {
+    "id": "src_eb68ee505d47",
+    "filePath": "fontes/catalogo-de-lints/ORIGEM.txt",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_c6e458434a3f": {
+    "id": "src_c6e458434a3f",
+    "filePath": "fontes/catalogo-de-lints/pedantic.md",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_86a88ae0715d": {
+    "id": "src_86a88ae0715d",
+    "filePath": "fontes/catalogo-de-lints/perf.md",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_33e62e8545ef": {
+    "id": "src_33e62e8545ef",
+    "filePath": "fontes/catalogo-de-lints/restriction.md",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_3a4c489872e1": {
+    "id": "src_3a4c489872e1",
+    "filePath": "fontes/catalogo-de-lints/style.md",
+    "importedAt": "2026-10-31T20:57:44+00:00"
+  },
+  "src_61e6898de3d6": {
+    "id": "src_61e6898de3d6",
+    "filePath": "fontes/catalogo-de-lints/suspicious.md",
+    "importedAt": "2026-10-31T20:57:45+00:00"
+  }
+}

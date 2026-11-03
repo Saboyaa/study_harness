@@ -1,0 +1,1 @@
+Clippy Book (mdBook), copiado de https://github.com/rust-lang/rust-clippy, pasta book/src, commit 8518004654e6d4fbdc48c8e6deddeb578c516152 (2026-10-30). Omitida a pasta development/ (internals e escrita de lints, fora do escopo).

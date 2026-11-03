@@ -1,0 +1,1 @@
+Catálogo de lints do Clippy, convertido de https://rust-lang.github.io/rust-clippy/main/index.html (baixado em 2026-10-31; 858 lints, um arquivo por grupo). Conversão de HTML para Markdown feita por script; texto original em inglês. Corresponde ao branch main, e o Clippy instalado é o 0.1.97, então pode haver diferenças.

@@ -1,0 +1,46 @@
+# Terminal web do study_harness: ttyd → tmux → claude, como o usuário `estudo`
+# (sem sudo, sem docker). A jaula abaixo vale até para um shell aberto com `!`
+# dentro do Claude: sistema somente leitura, /home vazio exceto o repositório.
+# Instalado por instalar-terminal.sh, que troca @REPO@ pelo caminho real.
+[Unit]
+Description=Terminal web enjaulado do study_harness
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=estudo
+Group=estudo
+WorkingDirectory=@REPO@
+Environment=HOME=/var/lib/estudo SHELL=/bin/bash PATH=/var/lib/estudo/.local/bin:/usr/local/bin:/usr/bin
+ExecStart=/usr/bin/ttyd -i lo -p 7681 -W \
+  -t fontSize=15 -t "fontFamily=JetBrains Mono, monospace" -t disableLeaveAlert=true \
+  -t 'theme={"background":"#141414","foreground":"#e6e6e6","cursor":"#e6e6e6","selectionBackground":"#3a3a3a"}' \
+  /usr/bin/tmux -L estudo new-session -A -s estudo
+Restart=on-failure
+UMask=0002
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=tmpfs
+BindPaths=@REPO@
+ReadWritePaths=/var/lib/estudo
+InaccessiblePaths=-/run/docker.sock -/run/tailscale -/var/lib/tailscale
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectProc=invisible
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectHostname=yes
+RestrictSUIDSGID=yes
+RestrictRealtime=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

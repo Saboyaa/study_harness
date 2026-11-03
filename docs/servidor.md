@@ -36,6 +36,19 @@ sudo systemctl enable --now code-server@$USER
 - Extensão **Markdown Preview Enhanced**: renderiza `$…$`, `$$…$$` e Mermaid. Dá para deixar a nota da lição aberta em preview ao lado do terminal.
 - No terminal integrado: `cd ~/estudos && claude`.
 
+## Painel do study_harness
+Visualizador próprio, no visual do LearnHarness: tópicos, `TOPICO.md` com confusões e pendências em destaque, mapa com nós clicáveis, grafo interativo (proposições, cadeias, fonte de cada nó, onde apareceu), lições e sessões com LaTeX e Mermaid. É somente leitura, usa só a biblioteca padrão do Python e se atualiza sozinho a cada gravação do tutor. Não serve arquivos que começam com ponto (os `.gabarito-*`).
+```sh
+python3 ferramentas/painel.py            # escuta só em 127.0.0.1:8765
+tailscale serve --bg 8765                # publica na sua tailnet, com HTTPS
+```
+Como serviço: uma unidade systemd com `ExecStart=/usr/bin/python3 <repo>/ferramentas/painel.py --porta 8765` e `User=<você>`. O terminal continua pelo SSH (abaixo); o painel fica aberto ao lado, no navegador ou no celular.
+
+## Terminal no painel (enjaulado)
+A aba **Terminal** do painel abre o `claude` no navegador (ttyd → tmux → claude), para estudar inteiro pelo celular. Instalação: `sudo bash ferramentas/servidor/instalar-terminal.sh`; depois, faça o login do Claude uma vez pela própria aba.
+
+Roda como o usuário `estudo`, sem sudo e sem docker, numa jaula do systemd (`ferramentas/servidor/estudo-terminal.service`): sistema somente leitura e `/home` vazio, exceto o repositório. A jaula vale também para comandos com `!` dentro do Claude. Quem tomasse esse terminal conseguiria ler e editar o repositório, gastar a cota do Claude e acessar a internet. Não conseguiria virar root, usar o Docker nem ver o resto da máquina. Publicado só na tailnet, em `https://<máquina>.<tailnet>.ts.net:8443`.
+
 ## Alternativa mínima: SSH + tmux
 Sem navegador, mais leve:
 ```sh

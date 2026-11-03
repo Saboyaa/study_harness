@@ -22,6 +22,7 @@ cd study_harness && claude
 - `docs/formato-grafo.md`: formato do grafo (LearnHarness v1 + campos `fonte`/`confianca`).
 - `docs/servidor.md`: como rodar num PC antigo como servidor.
 - `ferramentas/grafo.py`: ids, registro de fontes, listagem e validação do grafo.
+- `ferramentas/painel.py`: painel web somente leitura (estado do tópico, mapa, grafo interativo, lições com LaTeX e Mermaid, sessões, fontes), que se atualiza sozinho enquanto o tutor grava. `python3 ferramentas/painel.py` e abra `http://127.0.0.1:8765`.
 
 ## Licença
 

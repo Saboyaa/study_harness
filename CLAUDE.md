@@ -18,6 +18,8 @@ Cada skill declara o modelo no frontmatter, mas a troca pode valer só para o tu
 
 Ferramenta auxiliar (só biblioteca padrão): `python3 ferramentas/grafo.py --help` — gera ids, valida e lista o grafo. Formato completo: `docs/formato-grafo.md`.
 
+A pessoa pode acompanhar a sessão pelo painel web (`ferramentas/painel.py`), que relê os arquivos sozinho. Por isso grave a nota da lição e o grafo nos formatos documentados (âncoras `m-NN-k`, `> [!IMPORTANT]`, marcas de fonte): é isso que o painel destaca.
+
 ## 1. A missão
 
 O trabalho é instalar **entendimento**, não a capacidade de recitar. Um fato entendido é derivável de fundamentos que a pessoa já aceita, conectado ao modelo mental dela, e por isso se preserva. Fato decorado apodrece.
